@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="2dip"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/currentSysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Current System Time"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/currentFormText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Formation Type"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/currentFormButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentFormText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/currentFormText"
+        android:background="@drawable/back_button"
+        android:text="VIC"
+        android:textSize="25sp" />
+
+    <DigitalClock
+        android:id="@+id/CurrentSysClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currentSysText"
+        android:layout_alignTop="@+id/currentFormButton"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/nextSentenceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CurrentSysClock"
+        android:layout_below="@+id/currentFormButton"
+        android:text="Time To Next Sentence"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/nextSentenceTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CurrentSysClock"
+        android:layout_below="@+id/nextSentenceText"
+        android:text="0:00"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/numberFitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentFormButton"
+        android:layout_toRightOf="@+id/nextSentenceText"
+        android:paddingLeft="15dip"
+        android:text="# in Fit"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/myPosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentFormButton"
+        android:layout_toRightOf="@+id/numberFitText"
+        android:paddingLeft="10dip"
+        android:text="My Position"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/numberFitEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/numberFitText"
+        android:layout_below="@id/numberFitText"
+        android:inputType="number"
+        android:text="5"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/myPosEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/myPosText"
+        android:layout_below="@id/numberFitText"
+        android:inputType="number"
+        android:text="1"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/nextSentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/numberFitEt"
+        android:text="Next Sentence"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/nextSentenceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextSentence"
+        android:text="AIR SHOW TO"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <CheckBox
+        android:id="@+id/reverseCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/nextSentence"
+        android:text="Reverse"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nextSentenceTv"
+        android:text="Start Time"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/startTimeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startTime"
+        android:text="12:20"
+        android:textColor="#000"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/advMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/numberFitEt"
+        android:layout_below="@id/reverseCB"
+        android:text="Advance Minutes"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/subAdvTimeBt"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/advMin"
+        android:layout_marginBottom="5dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/back_button"
+        android:paddingRight="10dip"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/addAdvTimeBt"
+        android:layout_width="40dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/advMin"
+        android:layout_below="@+id/advMin"
+        android:background="@drawable/back_button"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/stop_air_test"
+        android:layout_width="150dip"
+        android:layout_height="120dip"
+        android:layout_below="@+id/addAdvTimeBt"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/back_button"
+        android:text="ARM"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/skipSenetenceBt"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/stop_air_test"
+        android:layout_below="@+id/addAdvTimeBt"
+        android:background="@drawable/back_button"
+        android:text="Skip Sentence"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/smokeOnBt"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/stop_air_test"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/back_button"
+        android:text="Smoke On"
+        android:textColor="#000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/currentBTTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Current BlueTooth Device is"
+        android:textColor="#000" />
+
+</RelativeLayout>

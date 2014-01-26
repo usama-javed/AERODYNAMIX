@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Default Formation Type"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/formation_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="VIC"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/formation_bt"
+            android:layout_marginTop="10dip"
+            android:text="Default # in the fit"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/default_num_in_the_fit_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="10dip"
+            android:inputType="number"
+            android:text="5"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/default_num_in_the_fit_edit"
+            android:layout_marginTop="10dip"
+            android:text="Default my position #"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/default_my_position_num_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="10dip"
+            android:inputType="number"
+            android:text="1"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/screen_main"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back_button"
+            android:text="Main Screen" />
+
+        <Button
+            android:id="@+id/settings_sentences"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back_button"
+            android:textSize="13sp"
+            android:text="Settings Sentences" />
+
+        <Button
+            android:id="@+id/default_times"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/screen_main"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Default Times" />
+
+        <Button
+            android:id="@+id/sync_time"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/settings_sentences"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Sync Time" />
+
+        <Button
+            android:id="@+id/air_test_mode"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/default_times"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Air Test Mode" />
+
+        <Button
+            android:id="@+id/bluetooth_device"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sync_time"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Bluetooth DEvice" />
+
+        <Button
+            android:id="@+id/default_formation"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/air_test_mode"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Default formation" />
+
+        <Button
+            android:id="@+id/check_flight"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bluetooth_device"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="Check Flight" />
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="140dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/check_flight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button"
+            android:text="About" />
+    </RelativeLayout>
+
+</ScrollView>

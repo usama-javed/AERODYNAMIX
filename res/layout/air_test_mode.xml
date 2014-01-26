@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <TextView
+        android:id="@+id/detTestMode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="This screen is for testing smoke timing in the air. System will send 2 seconds of on brust &amp; 2 seconds of off, starting on the next 10 second of the time, Flight should show parallel lines starting and stopping in the same place in the air."
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/currentSysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detTestMode"
+        android:paddingTop="15dip"
+        android:text="Current System Time"
+        android:textColor="#000" />
+
+    <DigitalClock
+        android:id="@+id/currentSysTimeDC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentSysText"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/formationType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentSysTimeDC"
+        android:text="Formation Type"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/currentFormTestBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formationType"
+        android:background="@drawable/back_button"
+        android:text="VIC"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/numberFitText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentFormTestBT"
+        android:text="# in Fit"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/myPosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/currentFormTestBT"
+        android:layout_toRightOf="@+id/numberFitText"
+        android:paddingLeft="10dip"
+        android:text="My Position"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/numberFitTestEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/numberFitText"
+        android:layout_below="@id/numberFitText"
+        android:inputType="number"
+        android:text="5"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/myPosTestEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/myPosText"
+        android:layout_below="@id/numberFitText"
+        android:inputType="number"
+        android:text="1"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/adjustTimeTestBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/numberFitText"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/back_button"
+        android:text="Go Adjust Time" />
+
+    <Button
+        android:id="@+id/armedTestBT"
+        android:layout_width="150dip"
+        android:layout_height="120dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/myPosTestEt"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/back_button"
+        android:padding="20dip"
+        android:text="ARMED"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/smokeTestBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/myPosTestEt"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/back_button"
+        android:text="Smoke on" />
+
+    <TextView
+        android:id="@+id/currentBtTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Current Bluetooth device is "
+        android:textColor="#000" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dip" >
+
+        <Button
+            android:id="@+id/choose_bluetooth_device_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/back_button"
+            android:text="Choose your Bluetooth Device" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_bluetooth_device_bt"
+            android:layout_marginTop="20dip"
+            android:text="Current Bluetooth Device is "
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/bluetooth_device_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/choose_bluetooth_device_bt"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/textView1"
+            android:text="KahunaBTrelay"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bluetooth_device_name_text"
+            android:layout_marginTop="20dip"
+            android:text="Current relay status"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/relay_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="20dip"
+            android:text="READY"
+            android:textColor="#00FF00"
+            android:textSize="40sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relay_status"
+            android:layout_marginTop="20dip"
+            android:text="Last relay status check"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/time_to_last_relay_status_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="20dip"
+            android:text="2"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_to_last_relay_status_check_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/time_to_last_relay_status_check_text"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@+id/time_to_last_relay_status_check_text"
+            android:text="seconds ago"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+</ScrollView>
